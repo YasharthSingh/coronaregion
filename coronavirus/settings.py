@@ -29,7 +29,7 @@ DEBUG = True
 
 # config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['172.105.61.92']
+ALLOWED_HOSTS = ['3.21.281.84']
 
 
 # Application definition
