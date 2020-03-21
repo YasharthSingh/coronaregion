@@ -4,7 +4,7 @@ from django.http import HttpResponse
 	
 from datetime import datetime
 from covid import Covid
-import pandas as pd
+
 
 import schedule
 import time
