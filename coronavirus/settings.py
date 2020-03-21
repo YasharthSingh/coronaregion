@@ -29,7 +29,7 @@ DEBUG = True
 
 # config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['https://coronaregions.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -137,4 +137,4 @@ MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
 MEDIA_URL='/media/'
 
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
