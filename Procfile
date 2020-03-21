@@ -1,1 +1,1 @@
-web: gunicorn coronavirus.wsgi.  --log-file -
+python manage.py runserver
