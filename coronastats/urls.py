@@ -18,7 +18,7 @@ from django.urls import path,include
 from  . import views
 urlpatterns = [
  
-     path('',views.index,name="index"),
+     path('/',views.index,name="index"),
      path('countries_form',views.countries_form,name='countries_form'),
      path('country_vise',views.country_vise,name='country_vise'),
      path('getDate',views.getDate,name='getDate')
