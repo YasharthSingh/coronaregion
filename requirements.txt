@@ -11,3 +11,4 @@ djangorestframework==3.11.0
 djongo==1.2.38
 
 schedule
+whitenoise
