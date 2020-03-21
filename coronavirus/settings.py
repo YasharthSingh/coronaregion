@@ -29,7 +29,7 @@ DEBUG = True
 
 # config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['http://coronaregions.com/']
+ALLOWED_HOSTS = ['www.coronaregions.com/','172.105.61.92']
 
 
 # Application definition
