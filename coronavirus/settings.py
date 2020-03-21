@@ -29,8 +29,9 @@ DEBUG = False
 
 # config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['www.coronaregions.com','172.105.61.92','127.0.0.1','localhost']
+# ALLOWED_HOSTS = ['www.coronaregions.com','172.105.61.92','127.0.0.1','localhost']
 
+ALLOWED_HOSTS = ['www.coronaregions.com','172.105.61.92']
 
 # Application definition
 
