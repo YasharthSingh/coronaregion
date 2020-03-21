@@ -20,12 +20,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =  config('SECRET_KEY')
+# SECRET_KEY =  config('SECRET_KEY')
 
-# SECRET_KEY = 'a&^90m$=+)wvc8v7*fnkkxq6#f#x4=@y^u)-((wa4or3zswdyz'
+SECRET_KEY = 'a&^90m$=+)wvc8v7*fnkkxq6#f#x4=@y^u)-((wa4or3zswdyz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=True, cast=bool)
+DEBUG = True
+
+# config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = ['https://coronaregions.herokuapp.com']
 
@@ -76,9 +78,10 @@ WSGI_APPLICATION = 'coronavirus.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-      'default': dj_database_url.config(
-        default=config('DATABASE_URL')
-    )
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
 }
 
 
