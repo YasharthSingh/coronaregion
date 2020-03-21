@@ -25,7 +25,7 @@ SECRET_KEY =  config('SECRET_KEY')
 # SECRET_KEY = 'a&^90m$=+)wvc8v7*fnkkxq6#f#x4=@y^u)-((wa4or3zswdyz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = ['https://coronaregions.herokuapp.com']
 
