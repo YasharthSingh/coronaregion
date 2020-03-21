@@ -29,7 +29,7 @@ DEBUG = False
 
 # config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','10.204.1.29','3.21.218.84']
 
 
 # Application definition
