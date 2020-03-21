@@ -381,7 +381,7 @@ def country_vise(request):
 	covid.get_data()
 	#print(covid)
 	countries = covid.list_countries()
-	va=covid.get_status_by_country_id(32)
+	va=covid.get_status_by_country_id(33)
 
 
 	context = {
@@ -392,4 +392,6 @@ def country_vise(request):
 	return render(request,'country_specific.html',context)
 
 
+def docs(request):
+	return render(request,'docs.html')
 
